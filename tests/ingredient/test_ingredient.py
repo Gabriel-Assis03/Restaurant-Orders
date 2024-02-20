@@ -14,12 +14,6 @@ def test_ingredient():
     assert ingredient.__hash__() == hash('farinha')
     assert ingredient.__eq__(ingreTest) == True
     assert ingredient.__repr__() == "Ingredient('farinha')"
-
-def test_ingredient2():
-    ingreTest = {
-        'farinha',
-        Restriction.GLUTEN
-    }
     ingredient2 = Ingredient('carne')
     assert ingredient2.__eq__(ingreTest) == False
 
